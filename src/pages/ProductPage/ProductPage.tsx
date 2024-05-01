@@ -34,7 +34,7 @@ export const ProductPage: React.FC = memo(() => {
     if (productToChange) {
       navigate(
         `/${category}/${productToChange.id}`,
-        { replace: true },
+        { replace: true, state: { scrollToTop: false } },
       );
       setProduct(productToChange);
     }
